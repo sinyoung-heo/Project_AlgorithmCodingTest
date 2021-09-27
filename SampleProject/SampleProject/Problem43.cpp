@@ -77,11 +77,13 @@ int main()
 	{
 		mid = (left + right) / 2;
 
+		// move left
 		if (CountDVD(mid) <= maxCnt)
 		{
 			answer = mid;
 			right = mid - 1;
 		}
+		// move right
 		else
 			left = mid + 1;
 	}

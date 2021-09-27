@@ -135,5 +135,8 @@
     <ClCompile Include="Problem43.cpp">
       <Filter>01.Section2</Filter>
     </ClCompile>
+    <ClCompile Include="Problem44.cpp">
+      <Filter>01.Section2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
