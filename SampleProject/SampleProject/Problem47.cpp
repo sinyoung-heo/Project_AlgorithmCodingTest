@@ -44,6 +44,12 @@ int n = 0;
 vector<vector<bool>> vecCheckComplete;
 vector<vector<int>> vecHeight;
 
+// 상, 하, 좌, 우.
+int dy[4] = { -1, 1, 0, 0 };
+int dx[4] = { 0, 0, -1, 1 };
+
+bool isContinue = false;
+
 int main()
 {
 	cin >> n;
@@ -67,36 +73,32 @@ int main()
 	{
 		for (int x = 0; x < vecHeight[y].size(); ++x)
 		{
+			isContinue = false;
+
 			if (vecCheckComplete[y][x])
 				continue;
 
 			int curHeight = vecHeight[y][x];
 
-			// 상
-			if (y - 1 > -1)
+			// 상, 하, 좌, 우
+			for (int k = 0; k < 4; ++k)
 			{
-				if (curHeight <= vecHeight[y - 1][x])
-					continue;
-			}
-			// 하
-			if (y + 1 < vecHeight.size())
-			{
-				if (curHeight <= vecHeight[y + 1][x])
-					continue;
-			}
-			// 좌
-			if (x - 1 > -1)
-			{
-				if (curHeight <= vecHeight[y][x - 1])
-					continue;
-			}
-			// 우
-			if (x + 1 < vecHeight[y].size())
-			{
-				if (curHeight <= vecHeight[y][x + 1])
-					continue;
+				int idxY = y + dy[k];
+				int idxX = x + dx[k];
+
+				if (idxY < 0 || idxY > vecHeight.size() - 1) continue;
+				if (idxX < 0 || idxX > vecHeight[y].size() - 1) continue;
+
+				if (curHeight <= vecHeight[idxY][idxX])
+				{
+					isContinue = true;
+					break;
+				}
 			}
 
+			if (isContinue)
+				continue;
+			
 			// 현재 위치가 봉우리이면? 상하좌우는 비교할 필요 X.
 			++answer;
 			vecCheckComplete[y][x] = true;
