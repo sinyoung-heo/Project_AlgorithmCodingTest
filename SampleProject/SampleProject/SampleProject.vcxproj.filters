@@ -16,6 +16,9 @@
     <Filter Include="03.Section3">
       <UniqueIdentifier>{6508e7c1-0b64-4392-ab30-5336bfab826a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="97.STL">
+      <UniqueIdentifier>{429fb95a-8667-4320-86a5-cd9079bd52a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Problem01.cpp">
@@ -161,6 +164,15 @@
     </ClCompile>
     <ClCompile Include="Problem52.cpp">
       <Filter>01.Section2</Filter>
+    </ClCompile>
+    <ClCompile Include="01.shared_ptr.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="00.foward.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="02.move.cpp">
+      <Filter>97.STL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

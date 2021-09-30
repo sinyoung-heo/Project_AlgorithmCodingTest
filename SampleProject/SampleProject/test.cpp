@@ -1,70 +1,74 @@
+#include "vld.h"
 #include <iostream>
 #include <vector>
-#include <map>
 #include <list>
+#include <map>
+#include <unordered_map>
 #include <set>
+#include <unordered_set>
 #include <algorithm>
+#include <utility>
+#include <memory>
 
 using namespace std;
 
-//long countMoves(vector<int> numbers) {
-//	long count = 0;
-//
-//	map<int, int> m;
-//	for (auto& n : numbers)
-//		++m[n];
-//
-//	while (true)
-//	{
-//		if (m.size() == 1)
-//			break;
-//
-//		auto iterB = --(m.end());
-//		auto iterBB = (iterB - 1);
-//
-//		count += (iterB->first - iterBB->first) * iterB->second;
-//		iterBB->second += iterB->second;
-//
-//		m.erase(iterB);
-//	}
-//
-//	return count;
-//}
+template<typename T, typename... Args>
+T CreateT(Args&&... args)
+{
+	return T(forward<Args>(args)...);
+}
 
-//int cnt = 0;
+class CPlayer;
+class CCamera;
 
-//int getMinimumMoves(vector<int> arr) {
-//    while (true)
-//    {
-//        if (arr.begin() == max_element(arr.begin(), arr.end()))
-//            break;
-//
-//        auto iter_max = max_element(arr.begin(), arr.end());
-//        if (iter_max != (--arr.end()))
-//            ++cnt;
-//
-//        for (auto iter_begin = iter_max; iter_begin != arr.end(); ++iter_begin)
-//            arr.erase(iter_max);
-//    }
-//
-//    return cnt;
-//}
+class CPlayer
+{
+public:
+	CPlayer()							{ cout << "Player 기본생성자 호출" << endl; };
+	CPlayer(const int& n) : level(n)	{ cout << "Player 인자 있는 생성자 호출" << endl; };
+	~CPlayer()							{ cout << "Player 소멸자 호출" << endl; cout << camera.use_count() << endl; };
+public:
+	const int&				getLevel()	{ return level; }
+	weak_ptr<CCamera>&	getCamera() { return camera; }
+	void setCamera(const shared_ptr<CCamera>& spCamera) { camera = spCamera; cout << camera.use_count() << endl; }
+
+private:
+	int level{ 0 };
+	weak_ptr<CCamera> camera;
+};
+
+
+
+
+class CCamera
+{
+public:
+	CCamera()							{ cout << "Camera 기본생성자 호출" << endl; };
+	CCamera(const int& n) : value(n)	{ cout << "Camera 인자 있는 생성자 호출" << endl; };
+	~CCamera()							{ cout << "Camera 소멸자 호출" << endl; cout << player.use_count() << endl; };
+public:
+	const int&				getValue()	{ return value; }
+	weak_ptr<CPlayer>&	getPlayer()	{ return player; }
+
+	void setPlayer(const shared_ptr<CPlayer>& spPlayer) { player = spPlayer; cout << player.use_count() << endl; }
+
+private:
+	int value{ 0 };
+	weak_ptr<CPlayer> player;
+};
 
 int main()
 {
-	// cout << countMoves(vector<int>{5, 6, 8,8,5}) << endl;
+	shared_ptr<CPlayer> spPlayer = make_shared<CPlayer>(99);
+	shared_ptr<CCamera> spCamera = make_shared<CCamera>(1);
 
-	list<int> v{ 1, 3, 5 };
+	cout << spPlayer.use_count() << endl;
+	cout << spCamera.use_count() << endl;
+	cout << "------" << endl;
 
-	auto iter_begin = v.begin();
-	++iter_begin;
-
-	v.insert(iter_begin, 2);
-
-	for (auto& n : v)
-		cout << n << " ";
-
-
+	// weak_ptr은 shared_ptr의 순환 참조 고리를 끊기 위해 도입되었다.
+	spPlayer->setCamera(spCamera);
+	spCamera->setPlayer(spPlayer);
 
 	return 0;
 }
