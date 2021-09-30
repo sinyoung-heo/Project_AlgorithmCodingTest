@@ -174,5 +174,11 @@
     <ClCompile Include="02.move.cpp">
       <Filter>97.STL</Filter>
     </ClCompile>
+    <ClCompile Include="Problem53.cpp">
+      <Filter>01.Section2</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem54.cpp">
+      <Filter>01.Section2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
