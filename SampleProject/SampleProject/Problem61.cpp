@@ -61,9 +61,7 @@ void findAnswer(const int& idx, const int& num)
 	// 0
 	 int localSum3 = num;
 	//if (localSum3 == M)
-	//{
 	//	++answer;
-	//}
 	findAnswer(idx + 1, localSum3);
 }
 
