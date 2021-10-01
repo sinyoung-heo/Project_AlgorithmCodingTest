@@ -183,5 +183,20 @@
     <ClCompile Include="Problem55.cpp">
       <Filter>01.Section2</Filter>
     </ClCompile>
+    <ClCompile Include="03.array.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="04.vector.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="05.list.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="06.unordered_map.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
+    <ClCompile Include="07.compare.cpp">
+      <Filter>97.STL</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
