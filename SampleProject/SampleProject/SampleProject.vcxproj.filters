@@ -198,5 +198,8 @@
     <ClCompile Include="07.compare.cpp">
       <Filter>97.STL</Filter>
     </ClCompile>
+    <ClCompile Include="Problem61.cpp">
+      <Filter>03.Section3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
