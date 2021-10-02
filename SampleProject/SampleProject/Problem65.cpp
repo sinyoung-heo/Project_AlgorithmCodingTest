@@ -50,6 +50,7 @@ void searchExit(int x, int y)
 {
 	if (y == SIZE - 1 && x == SIZE - 1)
 	{
+		// 출구로 도착했다면 길 +1
 		++answer;
 		return;
 	}
@@ -61,13 +62,13 @@ void searchExit(int x, int y)
 		int nextY = y + dirY[i];
 
 		if ((nextX >= 0 && nextX < SIZE) && (nextY >= 0 && nextY < SIZE) &&
-			path[nextY][nextX] == 0 && !visit[nextY][nextX])
+			path[nextY][nextX] == 0 && !visit[nextY][nextX])	// 갈 수 있는 지점이고, 방문하지 않았다면 방문!
 		{
 			visit[nextY][nextX] = true;
 
 			searchExit(nextX, nextY);
 
-			visit[nextY][nextX] = false;
+			visit[nextY][nextX] = false;	// 방문을 마친 뒤에는 다시 방문을 풀어준다!
 		}
 	}
 }
@@ -90,7 +91,7 @@ int main()
 		}
 	}
 
-	visit[0][0] = true;
+	visit[0][0] = true;	// 시작지점 방문표시!
 	searchExit(0, 0);
 
 	cout << answer << endl;
