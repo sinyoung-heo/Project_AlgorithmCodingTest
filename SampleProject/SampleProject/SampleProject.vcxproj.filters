@@ -237,5 +237,8 @@
     <ClCompile Include="Problem73.cpp">
       <Filter>03.Section3</Filter>
     </ClCompile>
+    <ClCompile Include="Problem74.cpp">
+      <Filter>03.Section3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
