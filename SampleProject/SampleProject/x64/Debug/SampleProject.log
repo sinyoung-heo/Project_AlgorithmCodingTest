@@ -1,3 +1,4 @@
 ﻿D:\Visual Studio 2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(SampleProject.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  Problem74.cpp
+  Problem75.cpp
+D:\03. GitHub\04.AlgorithmCodingTest\SampleProject\SampleProject\Problem75.cpp(49,4): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
   SampleProject.vcxproj -> D:\03. GitHub\04.AlgorithmCodingTest\SampleProject\x64\Debug\AA.exe
