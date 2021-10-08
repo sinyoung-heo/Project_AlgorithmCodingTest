@@ -19,6 +19,24 @@
     <Filter Include="97.STL">
       <UniqueIdentifier>{429fb95a-8667-4320-86a5-cd9079bd52a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="96.Programmers">
+      <UniqueIdentifier>{c9189a9d-c4d5-439b-b566-d5e8559c0e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\스택/큐">
+      <UniqueIdentifier>{7976afff-c74a-4329-9835-c5af7c50a9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\정렬">
+      <UniqueIdentifier>{e33fe5ab-9585-4179-9856-abdf2aa88813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\해시">
+      <UniqueIdentifier>{66d3eeab-725a-492f-98d8-2f74d7daacd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\BFS/DFS">
+      <UniqueIdentifier>{c783ebdf-1798-4ac6-aae4-3034b5a83a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\완전탐색">
+      <UniqueIdentifier>{1b7f9ef3-ee9f-493f-9705-e270484b75a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Problem01.cpp">
@@ -257,6 +275,54 @@
     </ClCompile>
     <ClCompile Include="Problem80.cpp">
       <Filter>03.Section3</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem81.cpp">
+      <Filter>03.Section3</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_프린터.cpp">
+      <Filter>96.Programmers\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_기능개발.cpp">
+      <Filter>96.Programmers\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="lv1_완주하지_못한_선수.cpp">
+      <Filter>96.Programmers\해시</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_전화번호_목록.cpp">
+      <Filter>96.Programmers\해시</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_위장.cpp">
+      <Filter>96.Programmers\해시</Filter>
+    </ClCompile>
+    <ClCompile Include="lv3_베스트_앨범.cpp">
+      <Filter>96.Programmers\해시</Filter>
+    </ClCompile>
+    <ClCompile Include="lv1_K번째_수.cpp">
+      <Filter>96.Programmers\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_가장_큰_수.cpp">
+      <Filter>96.Programmers\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_h_idx.cpp">
+      <Filter>96.Programmers\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_다리를_지나는_트럭.cpp">
+      <Filter>96.Programmers\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_주식가격.cpp">
+      <Filter>96.Programmers\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_타겟_넘버.cpp">
+      <Filter>96.Programmers\BFS/DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="lv1_모의고사.cpp">
+      <Filter>96.Programmers\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_소수찾기.cpp">
+      <Filter>96.Programmers\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_카펫.cpp">
+      <Filter>96.Programmers\완전탐색</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
