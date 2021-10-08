@@ -22,20 +22,26 @@
     <Filter Include="96.Programmers">
       <UniqueIdentifier>{c9189a9d-c4d5-439b-b566-d5e8559c0e5b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="96.Programmers\스택/큐">
-      <UniqueIdentifier>{7976afff-c74a-4329-9835-c5af7c50a9bf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="96.Programmers\정렬">
-      <UniqueIdentifier>{e33fe5ab-9585-4179-9856-abdf2aa88813}</UniqueIdentifier>
+    <Filter Include="96.Programmers\Level2">
+      <UniqueIdentifier>{b37a46d7-ae87-420e-9969-b2d7c68f30c3}</UniqueIdentifier>
     </Filter>
     <Filter Include="96.Programmers\해시">
       <UniqueIdentifier>{66d3eeab-725a-492f-98d8-2f74d7daacd6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="96.Programmers\BFS/DFS">
-      <UniqueIdentifier>{c783ebdf-1798-4ac6-aae4-3034b5a83a6b}</UniqueIdentifier>
+    <Filter Include="96.Programmers\정렬">
+      <UniqueIdentifier>{e33fe5ab-9585-4179-9856-abdf2aa88813}</UniqueIdentifier>
     </Filter>
     <Filter Include="96.Programmers\완전탐색">
       <UniqueIdentifier>{1b7f9ef3-ee9f-493f-9705-e270484b75a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\스택/큐">
+      <UniqueIdentifier>{7976afff-c74a-4329-9835-c5af7c50a9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\깊이우선/너비우선 탐색">
+      <UniqueIdentifier>{c783ebdf-1798-4ac6-aae4-3034b5a83a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96.Programmers\Level1">
+      <UniqueIdentifier>{8948e20e-972b-4169-b6b8-2337875e764c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -313,7 +319,7 @@
       <Filter>96.Programmers\스택/큐</Filter>
     </ClCompile>
     <ClCompile Include="lv2_타겟_넘버.cpp">
-      <Filter>96.Programmers\BFS/DFS</Filter>
+      <Filter>96.Programmers\깊이우선/너비우선 탐색</Filter>
     </ClCompile>
     <ClCompile Include="lv1_모의고사.cpp">
       <Filter>96.Programmers\완전탐색</Filter>
@@ -323,6 +329,33 @@
     </ClCompile>
     <ClCompile Include="lv2_카펫.cpp">
       <Filter>96.Programmers\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_멀쩡한사각형.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_짝지어_제거하기.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_예상_대진표.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_괄호_회전하기.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_삼각달팽이.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_영어_긑말잇기.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_모음사전.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_스킬트리.cpp">
+      <Filter>96.Programmers\Level2</Filter>
+    </ClCompile>
+    <ClCompile Include="lv2_방문길이.cpp">
+      <Filter>96.Programmers\Level2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

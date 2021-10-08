@@ -1,3 +1,14 @@
 ﻿D:\Visual Studio 2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(SampleProject.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  lv2_카펫.cpp
-  SampleProject.vcxproj -> D:\03. GitHub\04.AlgorithmCodingTest\SampleProject\x64\Debug\AA.exe
+  lv2_모음사전.cpp
+D:\03. GitHub\04.AlgorithmCodingTest\SampleProject\SampleProject\lv2_모음사전.cpp(19,41): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  lv2_방문길이.cpp
+  lv2_삼각달팽이.cpp
+  lv2_스킬트리.cpp
+  lv2_영어_긑말잇기.cpp
+  코드를 생성하고 있습니다...
+lv2_방문길이.obj : error LNK2005: "int __cdecl solution(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?solution@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)이(가) lv2_모음사전.obj에 이미 정의되어 있습니다.
+lv2_삼각달팽이.obj : error LNK2005: main이(가) lv2_모음사전.obj에 이미 정의되어 있습니다.
+lv2_스킬트리.obj : error LNK2005: main이(가) lv2_모음사전.obj에 이미 정의되어 있습니다.
+lv2_영어_긑말잇기.obj : error LNK2005: main이(가) lv2_모음사전.obj에 이미 정의되어 있습니다.
+lv2_카펫.obj : error LNK2005: main이(가) lv2_모음사전.obj에 이미 정의되어 있습니다.
+D:\03. GitHub\04.AlgorithmCodingTest\SampleProject\x64\Debug\AA.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
